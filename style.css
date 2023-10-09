@@ -1,0 +1,15 @@
+
+body{
+    margin:0;
+    padding: 0;
+
+}
+#btn{
+    display: flex;
+    background-color: aquamarine;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+    margin-left: 500px;
+    transition: 0.5s,ease;
+}
