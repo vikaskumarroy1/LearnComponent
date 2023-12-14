@@ -1,17 +1,31 @@
-
-let arr=["red","blue","yellow","orange","black","cyan","green"];
-let i=0;
-
-let btn=document.getElementById("btn");
-
-btn.addEventListener('click', function(){
-    document.body.style.backgroundColor=arr[i];
+let container=document.querySelector(".container");
+for(let i=0;i<9;i++){
+    const div1 =document.createElement('div');
+    div1.classList.add("container_div");
     
-    if(i==arr.length-1){
-        i=0;
+    container.appendChild(div1);
+}
+    let color_divs= document.querySelectorAll(".container_div");
+    color_divs.forEach((color_div)=>{
+        let new_color=generateRandomColor();
+        color_div.style.backgroundColor = "#"+ new_color;
+        let text=color_div.innerText= new_color;
         
         
-    }
-    i++;
 
-})
+    })
+
+function generateRandomColor(){
+    let hexChars ="0123456789abcdef";
+    let colorCodeString="";
+    let colorCodeStringLength=6;
+    for( let i=0;i<colorCodeStringLength;i++){
+        let randomIndex=Math.floor(Math.random()*16);
+        colorCodeString=colorCodeString + hexChars[randomIndex]
+        
+
+    }
+    return colorCodeString;
+}
+
+

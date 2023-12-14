@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <h1> Press Any Key On Keyboard</h1> 
+   <div class="key-display"> Key Press:
+    <span id="key"> </span>
+
+   </div> 
+   <script>
+    function handlePressEvent(event){
+        const keypressed=event.key;
+
+        const displayEvent=document.getElementById("key");
+        console.log(displayElement);
+        displayElement.textContent= keypressed;
+
+
+    }
+    document.addEventListener("keydown", handlePressEvent);
+   </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+.mainarea{
+    display: flex;
+    justify-content: space-around;
+
+}
+.editors{
+    background-color: gray;
+    width: 100%;
+
+}
+textarea{
+    width: 100%;
+    min-height: 250px;
+}

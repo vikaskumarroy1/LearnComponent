@@ -1,15 +1,25 @@
 
 body{
     margin:0;
-    padding: 0;
-
 }
-#btn{
+h1{
+    text-align: center;
+}
+.container{
     display: flex;
-    background-color: aquamarine;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    margin-top: 300px;
-    margin-left: 500px;
-    transition: 0.5s,ease;
+}
+.container_div{
+    background-color: black;
+    width: 300px;
+    height: 150px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 25px;
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+    border: 2px solid red;
 }
